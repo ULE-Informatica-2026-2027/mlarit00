@@ -34,7 +34,7 @@ package es.unileon.prg.tema5;
         // Inicio modificacion
         int numCaracteres = cadena.length();
         int posicionIntermedia = numCaracteres / 2;
-        char caracterIntermedio = cadena.charAt(posicion intermedia);
+        char caracterIntermedio = cadena.charAt(posicionIntermedia);
 
         System.out.println("caracter intermedio: " + caracterIntermedio);
         System.out.println("codigo que lo reprsenta: " + (int) caracterIntermedio);
@@ -64,7 +64,7 @@ package es.unileon.prg.tema5;
 
       String cadenaMinusculas = cadena.toLowerCase();
       String otraCadenaMinusculas = otraCadena.toLowerCase();
-      boolean iguales3 = cadenaMinusculas.equals(otraCadenMinusculas);
+      boolean iguales3 = cadenaMinusculas.equals(otraCadenaMinusculas);
       // Fin modificacion
       }
    
@@ -106,6 +106,8 @@ package es.unileon.prg.tema5;
          cabecera("04", "");
          String cadena = "Viaje al Parnaso";
         // Inicio modificacion
+        boolean terminacion = cadena.endsWith("Parnaso");
+        boolean empieza = cadena.startsWith("Viaje");
         // Fin modificacion
       }
    
@@ -124,6 +126,17 @@ package es.unileon.prg.tema5;
          cabecera("05","");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+      int p = cadena.indexOf('p');
+      System.out.println(p);
+
+      int par = cadena.indexOf("par");
+      System.out.println(par);
+
+      int ultimaA = cadena.lastIndexOf('a');
+      System.out.println(ultimaA);
+
+      int posicionA2 = cadena.indexOf('a', 3);
+      System.out.println(posicionA2);
         // Fin modificacion  
       }
    
@@ -141,6 +154,11 @@ package es.unileon.prg.tema5;
       
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+      String reemplazo = cadena.replace('a', '*');
+      System.out.println(reemplazo);
+
+      String reemplazo2 = cadena.replace("Parnaso" , "Olimpo");
+      System.out.println(reemplazo2);
       // Fin modificacion
       }
    
@@ -157,6 +175,14 @@ package es.unileon.prg.tema5;
          cabecera("07", "");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+      int mitadCadena = cadena.length() / 2;
+      String subcadena1= cadena.substring(mitadCadena);
+      System.out.println(subcadena1);
+
+      int posJ = cadena.indexOf('j');
+      int posS = cadena.indexOf('s');
+      String subcadena2 = cadena.substring(posJ, posS);
+      System.out.println(subcadena2);
         // Fin modificacion
       }
    
@@ -171,6 +197,8 @@ package es.unileon.prg.tema5;
          cabecera("08", "");
          String cadena = " La Galatea   ";
       // Inicio modificacion
+      String cadenaJunta = cadena.trim();
+      System.out.println(cadenaJunta);
         // Fin modificacion
       }
    
@@ -187,6 +215,17 @@ package es.unileon.prg.tema5;
          boolean expresion = true;
          long enteroGrande = 1231231L;
       // Inicio modificacion
+          String numero2 = String.valueOf(numero);
+          System.out.println(numero2);
+
+          String expresion2 = String.valueOf(expresion);
+          System.out.println(expresion2);
+
+          String entero2 = String.valueOf(enteroGrande);
+          System.out.println(entero2);
+
+
+
         // Fin modificacion
       }
    
@@ -202,6 +241,7 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
          String otraCadena = "Viaje al Olimpo";
       // Inicio modificacion
+      int iguales5 = cadena.compareTo(otraCadena);
         // Fin modificacion
       }
    }
