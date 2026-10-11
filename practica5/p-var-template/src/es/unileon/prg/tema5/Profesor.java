@@ -32,5 +32,10 @@ public class Profesor {
 		this.niu = niu;
 		this.nombre = nombre;
 	}
+	public String toString(){
+      return "Profesor: " + nombre + " con DNI: " + niu;
+
+	}
+	
 }
 
